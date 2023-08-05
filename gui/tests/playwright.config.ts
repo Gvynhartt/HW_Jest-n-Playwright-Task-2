@@ -27,11 +27,14 @@ export default defineConfig({
 
     // Collect trace when retrying the failed test.
     trace: 'on-first-retry',
+
+    screenshot: 'on',
+
     launchOptions: {
         slowMo: 5000,
         devtools: true,
         headless: false,
-    }
+    },
   },
   // Configure projects for major browsers.
   projects: [
